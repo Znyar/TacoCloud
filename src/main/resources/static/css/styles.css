@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1.title {
+    text-align: center;
+    color: #333;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 200px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #218838;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.validationError {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#logoutForm {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#logoutForm input[type="submit"] {
+    width: auto;
+    background-color: #dc3545;
+}
+
+#logoutForm input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+a#another {
+    display: inline-block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a#another:hover {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.ingredient-group {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.ingredient-group h3 {
+    margin-top: 0;
+}
+
+.ingredient-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.post {
+    margin-top: 20px;
+}
+
+.btn-google {
+    display: inline-block;
+    background-color: #DB4437;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-google:hover {
+    background-color: #c1351d;
+}
+
+.btn-login,
+.btn-register {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,22 @@
+spring:
+  data:
+    mongodb:
+      port: 27017
+      username: admin
+      password: admin
+      database: tacoclouddb
+      host: localhost
+      authentication-database: admin
+      auto-index-creation: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 812631503806-1hpi85rv16709ds72k7co9fcrkk4oc5o.apps.googleusercontent.com
+            client-secret: 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
+            scope: profile, email
+            redirect-uri: http://localhost:8080/login/oauth2/code/google

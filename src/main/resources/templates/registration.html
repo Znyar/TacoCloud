@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taco Cloud - Register</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Register</h1>
+  <img class="logo" th:src="@{/images/TacoCloud.png}"/>
+
+  <!-- Форма регистрации -->
+  <form method="post" th:action="@{register}" id="registerForm" class="register-form">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm">Confirm password:</label>
+      <input type="password" name="confirm" id="confirm" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="fullname">Full name:</label>
+      <input type="text" name="fullname" id="fullname" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="street">Street:</label>
+      <input type="text" name="street" id="street" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" name="state" id="state" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="zip">Zip:</label>
+      <input type="text" name="zip" id="zip" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" name="phone" id="phone" required/>
+    </div>
+
+    <button type="submit" class="btn-register">Register</button>
+    <input type="hidden" name="_csrf" th:value="${_csrf.token}"/>
+  </form>
+</div>
+</body>
+</html>
