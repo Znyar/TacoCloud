@@ -13,13 +13,13 @@ target/
 .springBeans
 .sts4-cache
 
-src/main/resources/quickstart.properties
-
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+
+/src/main/resources/quickstart.properties
 
 ### NetBeans ###
 /nbproject/private/
