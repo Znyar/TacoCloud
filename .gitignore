@@ -1,4 +1,5 @@
 HELP.md
+src/main/resources/quickstart.properties
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -18,8 +19,6 @@ target/
 *.iws
 *.iml
 *.ipr
-
-/src/main/resources/quickstart.properties
 
 ### NetBeans ###
 /nbproject/private/
