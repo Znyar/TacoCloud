@@ -1,6 +1,8 @@
 server:
   port: 8080
 spring:
+  config:
+    import: classpath:quickstart.properties
   data:
     mongodb:
       port: 27017
@@ -18,7 +20,7 @@ spring:
       client:
         registration:
           google:
-            client-id: <>
-            client-secret: <>
+            client-id: ${google.client-id}
+            client-secret: ${google.client-secret}
             scope: profile, email
             redirect-uri: http://localhost:8080/login/oauth2/code/google
